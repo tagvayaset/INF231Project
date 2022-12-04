@@ -1,0 +1,114 @@
+body{
+    background-color: #282838;
+}
+.header{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position:relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+}
+span{
+    color: #f153b5;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 10px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #f153b5;
+    transition: .3s;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/*Капля*/
+section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+}
+
+.blob
+{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+}
+.blob:nth-child(2){
+    filter: blur(50px);
+}
+/*текст который в цетре*/
+.textCenter{
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.75em;
+    line-height: 1.5em;
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fff;
+
+    position: relative;
+    margin-right: 25%;
+    
+}
+/*here everyThing from About Us Page*/
+.detel {
+    margin-left: 8%;
+    margin-top: 15%;
+}
+.detel h1{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.detel p {
+    color: #fff;
+    line-height: 22px;
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.images:hover .shape{
+    bottom: 40px;
+}
+.images:hover .person{
+    left: 45%;
+}
