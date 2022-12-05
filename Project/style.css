@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 body{
     background-color: #282838;
 }
@@ -118,7 +116,6 @@ section{
     display: flex;
     align-items:center;
     min-height: 100vh;
-    
 }
 .images2{
     width: 45%;
@@ -154,4 +151,3 @@ section{
     color: #fff;
     line-height: 22px;
 }
->>>>>>> Stashed changes
