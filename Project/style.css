@@ -1,11 +1,11 @@
 body{
     background-color: #282838;
 }
-.header{
+header{
     width: 100%;
     background-size: cover;
     background-position: center;
-    position:relative;
+    position: relative;
 }
 nav{
     display: flex;
@@ -44,7 +44,7 @@ nav ul li a:hover{
     font-family: 'Josefin Sans', sans-serif;
 }
 /*Капля*/
-section
+.secBlob
 {
     position: relative;
     display: flex;
@@ -75,19 +75,18 @@ section
 
     position: relative;
     margin-right: 25%;
-    
 }
 /*here everyThing from About Us Page*/
-.detel {
+.desk {
     margin-left: 8%;
     margin-top: 15%;
 }
-.detel h1{
+.desk h1{
     font-size: 50px;
     color: #fff;
     margin-bottom: 20px;
 }
-.detel p {
+.desk p {
     color: #fff;
     line-height: 22px;
 }
@@ -111,4 +110,44 @@ section
 }
 .images:hover .person{
     left: 45%;
+}
+section{
+    position: relative;
+    display: flex;
+    align-items:center;
+    min-height: 100vh;
+}
+.images2{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+}
+.images2 img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.images:hover .shape2{
+    bottom: 40px;
+}
+.images:hover .person2{
+    left: 45%;
+}
+.desk2 {
+    margin-left: 50%;
+    margin-top: 15%;
+}
+.desk2 h1{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.desk2 p {
+    color: #fff;
+    line-height: 22px;
 }
