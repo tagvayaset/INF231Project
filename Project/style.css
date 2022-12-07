@@ -1,6 +1,7 @@
 body{
     background-color: #282838;
 }
+
 .ul {
     list-style-type: none;
     margin: 0;
@@ -407,3 +408,154 @@ font-style: italic;
     margin-left: -10px;
     margin-right: -10px;
    }
+
+header{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+}
+span{
+    color: #f153b5;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 10px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #f153b5;
+    transition: .3s;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/*Капля*/
+.secBlob
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+}
+
+.blob
+{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+}
+.blob:nth-child(2){
+    filter: blur(50px);
+}
+/*текст который в цетре*/
+.textCenter{
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.75em;
+    line-height: 1.5em;
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fff;
+
+    position: relative;
+    margin-right: 25%;
+}
+/*here everyThing from About Us Page*/
+.desk {
+    margin-left: 8%;
+    margin-top: 15%;
+}
+.desk h1{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.desk p {
+    color: #fff;
+    line-height: 22px;
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.images:hover .shape{
+    bottom: 40px;
+}
+.images:hover .person{
+    left: 45%;
+}
+section{
+    position: relative;
+    display: flex;
+    align-items:center;
+    min-height: 100vh;
+}
+.images2{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+}
+.images2 img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.images:hover .shape2{
+    bottom: 40px;
+}
+.images:hover .person2{
+    left: 45%;
+}
+.desk2 {
+    margin-left: 50%;
+    margin-top: 15%;
+}
+.desk2 h1{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.desk2 p {
+    color: #fff;
+    line-height: 22px;
+}
