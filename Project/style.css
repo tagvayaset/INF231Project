@@ -1,0 +1,409 @@
+body{
+    background-color: #282838;
+}
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-left: 19cm;
+    overflow: hidden;
+    background-color: #282838;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+
+}
+
+.popular{
+  color:#f219e3;
+  font-family: fantasy;
+  text-align: center;
+ margin-bottom: -2cm;
+}
+  
+.first-page {
+  height: 100vh;
+  background-image: url("https://qaztourism.kz/public/images/first-page.jpeg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 100px black;
+  color: #FFFFFF;
+}
+.first-page h1{
+  margin-left: 25px;
+  color:#0000007c;
+}
+.first-page p{
+  margin-left: 10px;
+  color: #00000090;
+}
+* {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+div {
+  display: block;
+}
+
+.li {
+    float: left;
+}
+  
+.ptxt{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+    color: #f219e3; 
+    text-align: center;
+    
+}
+.li a {
+    display: block;
+    color: #f219e3;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.li a:hover {
+    background-color: #d7d7db;
+}
+.tit{
+    color: #f219e3;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.text p{
+    padding-left: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+}
+
+.box2{
+    display: flex;
+    justify-content: space-around;
+}
+.alm{
+    color: #f219e3;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+}
+hr {
+    border: none;
+    margin: 30px 0;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='rgb(51, 122, 183)' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-2,10,-2 s 5,2,10,2 c 5,0,5,-2,10,-2 s 5,2,10,2'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    padding-bottom: 4px;
+    background-size: auto 4px;
+}
+/*carousel*/
+.carousel {
+    text-align: center;
+}
+
+  main#carousel {
+    grid-row: 1 / 2;
+    grid-column: 1 / 8;
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 300px;
+    --items: 5;
+    --middle: 3;
+    --position: 100;
+    pointer-events: none;
+  }
+  
+  div.item {
+    position: absolute;
+    width: 800px;
+    height: 400px;
+    background-color: #f219e3;
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.25s linear;
+    transform: rotateY(calc(-10deg * var(--r)))
+      translateX(calc(-300px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
+  }
+  
+  div.item:nth-of-type(1) {
+    --offset: 1;
+  }
+  div.item:nth-of-type(2) {
+    --offset: 2;
+  }
+  div.item:nth-of-type(3) {
+    --offset: 3;
+  }
+  div.item:nth-of-type(4) {
+    --offset: 4;
+  }
+  div.item:nth-of-type(5) {
+    --offset: 5;
+  }
+  
+  input:nth-of-type(1) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(1):checked ~ main#carousel {
+    --position: 1;
+  }
+  
+  input:nth-of-type(2) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(2):checked ~ main#carousel {
+    --position: 2;
+  }
+  
+  input:nth-of-type(3) {
+    grid-column: 4 /5;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(3):checked ~ main#carousel {
+    --position: 3;
+  }
+  
+  input:nth-of-type(4) {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(4):checked ~ main#carousel {
+    --position: 4;
+  }
+  
+  input:nth-of-type(5) {
+    grid-column: 6 / 7;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(5):checked ~ main#carousel {
+    --position: 5;
+  }
+
+
+
+  .grp{
+    color: #000;
+    font-size: 2rem;
+    width: 500px;
+    height: 500px;
+    overflow-y:auto;
+    scroll-snap-type: y mandatory;
+    display: inline-block;
+    margin-left: 19px;
+    margin-right: 49px;
+    margin-top: 195px;
+    justify-content: space-between;
+
+
+}
+
+.itm{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    scroll-snap-align: start;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    color: #f219e3;
+
+}
+.itm a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color:#d7d7db
+}
+.itm p{
+    font-family:fantasy;
+     font-size: 30px;
+}
+
+.itm:nth-child(1){
+    background-color: #282838;
+}
+
+.itm:nth-child(2){
+    background-color: #282838;
+}
+
+.itm:nth-child(3){
+    background-color: #282838;
+}
+.itm:nth-child(4){
+    background-color: #282838;
+}
+
+/*overlay*/
+.container {
+  position: relative;
+  width: 48vw;
+  height: auto;
+  display: inline-flex;
+  margin-left: 15px;
+  margin-bottom: 20px;
+ 
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .9s ease;
+  background-color: #0000007c;
+}
+
+.container:hover .overlay {
+  opacity: 20;
+}
+
+.matin {
+  color: rgb(206, 202, 182);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: #fff;
+    font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tour{
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #ff1bbe;
+}
+.tour p{
+  color: #f219e3;
+}
+.tour a{
+  color: #d7d7db;
+}
+  
+/*text*/
+.anthblck{
+background-color:#b9b9cd;
+text-align: center;
+}
+.anthblck h3{
+padding-top: 100px;
+color: #000000d0;
+font-size: xx-large;
+font-style: italic;
+}
+.fire{
+  display: inline-flex;
+  margin: 20px 20px 70px 20px;
+  font-style: oblique;
+  font-size: x-large;
+}
+/*rnopka*/
+.knopka {
+  background-color: rgb(255, 0, 204);
+   -webkit-border-radius: 25px;
+   border-radius: 25px;
+   border: none;
+   color: #eeeeee;
+   cursor: pointer;
+   display: inline-block;
+   font-family: sans-serif; 
+   font-size: 20px;
+   padding: 20px 40px;
+   text-align: center;
+   text-decoration: none;
+   margin: 150px 800px 100px 800px;
+   }
+   @keyframes glowing {
+   0% { background-color: #f9117dec; box-shadow: 0 0 5px #d730d4; }
+   50% { background-color: #f9117dd6; box-shadow: 0 0 20px #ef60a0; }
+   100% { background-color: #f9117d; box-shadow: 0 0 5px #ff1381; }
+   }
+   .knopka {
+   animation: glowing 1300ms infinite;
+   }
+
+   .reklm{
+    border: #f9117d 3px solid;
+    border-radius: 15px;
+    color: #efe8e8;
+    padding: 15px 35px;
+    background-color:#f9117d46;
+    text-align: center;
+   }
+   .reklm h2{
+    color:rgb(255, 255, 255);
+    font-size: xx-large;
+   }
+   .reklm p{
+    color: #eeeeee93;
+    font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+   .bir{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 90px;
+    margin-top: 65px;
+    background-color: #303045ba;
+    border-radius: 80%;
+   }
+   .bir h1{
+    color: #d730d4;
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+   .bir p{
+    color: #b9b9cd;
+    font-style: oblique;
+    font-size: large;
+   }
+   #footer{
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+    display: inline-block;
+    color: #000000;
+    text-align: center;
+    margin-top: 50px;
+   }
+   #footer p{
+    font-style: oblique;
+    font-size: large;
+    border: #2a2a3b 1px solid;
+    background-color: #222230;
+    padding: 50px 50px;
+    margin-bottom: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+   }

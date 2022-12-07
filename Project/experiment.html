@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title>Заголовок документа</title>
+    <style> 
+      .knopka {
+     background-color: rgb(255, 0, 204);
+      -webkit-border-radius: 60px;
+      border-radius: 60px;
+      border: none;
+      color: #eeeeee;
+      cursor: pointer;
+      display: inline-block;
+      font-family: sans-serif; 
+      font-size: 20px;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      }
+      @keyframes glowing {
+      0% { background-color: #f9117dec; box-shadow: 0 0 5px #d730d4; }
+      50% { background-color: #f9117dd6; box-shadow: 0 0 20px #ef60a0; }
+      100% { background-color: #f9117d; box-shadow: 0 0 5px #ff1381; }
+      }
+      .knopka {
+      animation: glowing 1300ms infinite;
+      }
+    </style>
+  </head>
+  <body>
+   
+    <a class="knopka" href="#">Нажмите сюда!</a>
+   
+  </body>
+</html>
