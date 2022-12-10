@@ -53,8 +53,7 @@ nav ul li a:hover{
     min-height: 100vh;
 }
 
-.blob
-{
+.blob{
     position: absolute;
     width: 500px;
     height: 300px;

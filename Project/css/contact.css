@@ -1,0 +1,131 @@
+body{
+    background-color: #282838;
+}
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    color:#fff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+html{
+    font-size:85%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+/* scrollbar */
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+section {
+    padding: 8rem 7%;
+}
+.heading{
+    text-align: center;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+span{
+    color: #f153b5;
+}
+/* header */
+header{
+    padding:1.5rem 7%;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    background-color: #262635;
+    border-bottom:.1rem solid rgba(255,255,255,.3);
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logotype a{
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+}
+.navbar li {
+    display: inline-block;
+    padding: 1rem 1rem;
+    
+}
+.navbar li a{
+    text-decoration: none;
+    margin:0rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:#fff;
+
+}
+.navbar li a:hover{
+    color: #f153b5;
+    transition: .3s;
+}
+
+
+
+/* about contact */
+.contact__inner{
+    display: flex;
+    background: #33334a;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+.map{
+    flex:1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+.contact form{
+    flex:1 1 45rem;
+    padding:5rem 2rem;
+    text-align: center;
+}
+.contact h3{
+    font-size: 3.5rem;
+    color:#f153b5;
+}
+.inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background:#33334a;
+    border:.1rem solid rgba(255,255,255,.3);
+}
+.inputBox span{
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+.inputBox input{
+    width: 100%;
+    padding:2rem;
+    font-size: 1.7rem;
+    text-transform: none;
+    background:none;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    background: #33334a;
+    cursor: pointer;
+}
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+
