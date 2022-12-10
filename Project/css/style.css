@@ -10,7 +10,9 @@ span{
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
     color:#fff;
+    transition: all .3s ease-out;
 }
+
 /* header */
 header{
     padding:1.5rem 7%;
@@ -29,6 +31,7 @@ header{
     text-decoration: none;
     color: white;
     font-size: 3rem;
+    letter-spacing: .4rem;
 }
 .navbar li {
     display: inline-block;
@@ -154,4 +157,93 @@ section{
 .desk2 p {
     color: #fff;
     line-height: 22px;
+}
+
+/* ... */
+.menu_btn {
+    display: none;
+    cursor: pointer;
+}
+.menu_btn div{
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3 ease;
+}
+
+
+
+
+
+@media screen and (max-width: 991px) {
+    html {
+        font-size: 60%;
+    }
+    header {
+        padding: 2rem;
+    }
+    section{
+        padding: 8rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .menu_btn {
+        display: block;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .navbar {
+        position: absolute;
+        right: 0;
+        top: 9.3vh;
+        background: #f153b4ae;
+        box-shadow: 0 .5rem 1.5rem #f153b4bd;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40% ;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .navbar li {
+        opacity: 0;
+        font-size: 4rem;
+        
+    }
+   .navbar li a {
+        font-weight: bold;
+        font-size: 2rem;
+   }
+
+}
+.nav-active {
+    transform: translateX(0%);
+
+}
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+  
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
+.toggle .first_line {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .second_line {
+    opacity: 0;
+}
+.toggle .third_line {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
