@@ -1,48 +1,53 @@
 body{
     background-color: #282838;
 }
-header{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-.logo a{
-    text-decoration: none;
-    color: white;
-    font-size: 28px;
-}
 span{
     color: #f153b5;
-}
-nav ul li{
-    list-style-type: none;
-    display: inline-block;
-    padding: 5px 10px;
-}
-nav ul li a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-nav ul li a:hover{
-    color: #f153b5;
-    transition: .3s;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
+    color:#fff;
 }
+/* header */
+header{
+    padding:1.5rem 7%;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    background-color: #262635;
+    border-bottom:.1rem solid rgba(255,255,255,.3);
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logotype a{
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+}
+.navbar li {
+    display: inline-block;
+    padding: 1rem 1rem;
+    
+}
+.navbar li a{
+    text-decoration: none;
+    margin:0rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:#fff;
+
+}
+.navbar li a:hover{
+    color: #f153b5;
+    transition: .3s;
+}
+
 /*Капля*/
 .secBlob
 {
