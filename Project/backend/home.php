@@ -3,7 +3,7 @@ session_start();
 
      if (isset($_SESSION['id']) && isset($_SESSION['login'])) {
      
-     include('connect.php');
+     include('config/connect.php');
      $query = 'select * from feedback';
      $result = $conn->query($query);
 ?>

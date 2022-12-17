@@ -1,6 +1,6 @@
 <?php 
 session_start(); 
-include "connect.php";
+include "config/connect.php";
 
 if (isset($_POST['login']) && isset($_POST['password'])) {
 
