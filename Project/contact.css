@@ -1,0 +1,267 @@
+body{
+    background-color: #282838;
+}
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    color:#fff;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all .3s ease-out;
+}
+html{
+    font-size:85%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+/* scrollbar */
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+section {
+    padding: 8rem 7%;
+}
+.heading{
+    text-align: center;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    font-size: 4rem;
+}
+span{
+    color: #f153b5;
+}
+/* header */
+header{
+    padding:1.5rem 7%;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    background-color: #262635;
+    border-bottom:.1rem solid rgba(255,255,255,.3);
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logotype a{
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    letter-spacing: .4rem;
+}
+.navbar li {
+    display: inline-block;
+    padding: 1rem 1rem;
+    
+}
+.navbar li a{
+    text-decoration: none;
+    margin:0rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:#fff;
+
+}
+.navbar li a:hover{
+    color: #f153b5;
+    transition: .3s;
+}
+
+
+
+
+.contact .icons-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+    bottom: 10rem;
+    padding-bottom: 5rem;
+}
+.contact .icons-container .icons{
+    padding: 2.5rem;
+    text-align: center;
+    border: .1rem solid rgba(255, 255, 255, 0.34);
+    border-radius: 5rem;
+    box-shadow: 10px 5px 5px #f153b5;
+    background: #282838;
+}
+
+.contact .icons-container .icons i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    color: rgb(75, 44, 44);
+    background: #f153b5;
+    border-radius: 50%;
+}
+
+.contact .icons-container .icons h3{
+    color: #f153b5;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+}
+
+.contact .icons-container .icons p{
+    color: #fff;
+    line-height: 1.8;
+    font-size: 1.5rem;
+}
+/* about contact */
+.contact__inner{
+    display: flex;
+    background: #33334a;
+    flex-wrap: wrap;
+    gap:1rem;
+    border-radius: 5rem;
+    box-shadow: 10px 5px 5px #f153b5; 
+}
+.map{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5rem;
+}
+.contact form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+.contact h3{
+    font-size: 3.5rem;
+    color:#f153b5;
+}
+
+.inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background:#33334a;
+    border:.1rem solid rgba(255,255,255,.3);
+}
+.inputBox span{
+    font-size: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    text-transform: none;
+    background:none;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    background: #33334a;
+    cursor: pointer;
+}
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+
+
+/* ... */
+.menu_btn {
+    display: none;
+    cursor: pointer;
+}
+.menu_btn div{
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3 ease;
+}
+
+
+
+
+
+@media screen and (max-width: 991px) {
+    html {
+        font-size: 60%;
+    }
+    header {
+        padding: 2rem;
+    }
+    section{
+        padding: 8rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .menu_btn {
+        display: block;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .navbar {
+        position: absolute;
+        right: 0;
+        top: 9.3vh;
+        background: #f153b4ae;
+        box-shadow: 0 .5rem 1.5rem #f153b4bd;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40% ;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .navbar li {
+        opacity: 0;
+        font-size: 4rem;
+        
+    }
+   .navbar li a {
+        font-weight: bold;
+        font-size: 2rem;
+   }
+
+}
+.nav-active {
+    transform: translateX(0%);
+
+}
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+  
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
+.toggle .first_line {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .second_line {
+    opacity: 0;
+}
+.toggle .third_line {
+    transform: rotate(45deg) translate(-5px, -6px);
+}

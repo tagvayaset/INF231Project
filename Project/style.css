@@ -197,7 +197,7 @@ section{
 }
 .desk2 {
     margin-left: 50%;
-    margin-top: 15%;
+    /* margin-top: 15%; */
 }
 .desk2 h1{
     font-size: 50px;
@@ -227,17 +227,24 @@ a.btn:hover{
     height: 60vh;
     width: 100%;
 }
-
+#fill{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: .7;
+}
 footer{
     height: 25vh;
     min-height: 100px;
     padding: 20px 50px;
     width: 100%;
-    background-color:  #631a47;
+    background-color: #f153b5;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: relative;
+    padding-right: 15%;
     /* flex-direction: column ; */
 }
 footer .social_icons{
@@ -293,3 +300,57 @@ form{
     place-items: center;
     align-items: center;
 }
+/* waves*/
+
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(img/wavePink-removebg-preview.png);
+    background-size: 1000px 100px;
+}
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_2 4s linear infinite;
+}
+
+footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_2 3s linear infinite;
+}
+@keyframes animateWave {
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_2 {
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+
