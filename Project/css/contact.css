@@ -1,0 +1,448 @@
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    color:#fff;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all .3s ease-out;
+}
+html{
+    font-size:85%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+/* scrollbar */
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+section {
+    padding: 8rem 7%;
+}
+.heading{
+    text-align: center;
+    padding-bottom: 3rem;
+    padding-top: 10rem;
+    font-size: 4rem;
+}
+span{
+    color: #f153b5;
+}
+/* header */
+body{
+    background-color: #282838;
+}
+header{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relataive;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.logotype a{
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+}
+span{
+    color: #f153b5;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 10px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #f153b5;
+    transition: .3s;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/* информация биз туралы */
+.icons-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+    bottom: 10rem;
+    padding-bottom: 14rem;
+    padding-top: 8rem;
+}
+.icons{
+    padding: 2.5rem;
+    text-align: center;
+    border: .1rem solid rgba(255, 255, 255, 0.34);
+    border-radius: 5rem;
+    box-shadow: 10px 5px 5px #f153b5;
+    background: #282838;
+}
+
+.icons i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    color: rgb(75, 44, 44);
+    background: #f153b5;
+    border-radius: 50%;
+}
+
+.icons h3{
+    color: #ffffff;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+}
+
+.icons p{
+    color: #fff;
+    line-height: 1.8;
+    font-size: 1.5rem;
+}
+/* about contact */
+.contact__inner{
+    display: flex;
+    background: #33334a;
+    flex-wrap: wrap;
+    gap:1rem;
+    border-radius: 5rem;
+    box-shadow: 10px 5px 5px #f153b5; 
+}
+.map{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5rem;
+}
+.contact form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+.contact .contact__inner h3{
+    font-size: 3.5rem;
+    color:#fff;
+}
+
+.inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background:#33334a;
+    border:.1rem solid rgba(255,255,255,.3);
+}
+.inputBox span{
+    font-size: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: #fff;
+}
+.inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    text-transform: none;
+    background:none;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    background: #33334a;
+    cursor: pointer;
+}
+.btn:hover{
+    letter-spacing: .2rem;
+    color: #f153b5;
+}
+
+
+/* rental first page */
+.rental__img img{
+    width: 40rem;
+    position: relative;
+    border-radius: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 15%);
+}
+.rental__title h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    color: #f153b5;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    background-image: linear-gradient(#f30698, #fff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -400px 0;
+    animation: backcolor 3s linear infinite alternate;
+
+}
+@keyframes backcolor {
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* rental box */
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+.box{
+    border:.1rem solid rgba(255,255,255,.3); 
+    box-shadow: 10px 5px 5px #f153b48c; 
+}
+.box__images{
+    height: 25rem;
+    overflow:hidden;
+    width: 100%;
+}
+.box__images img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.box:hover .box__images img{
+    transform: scale(1.2);
+}
+
+.box__content{
+    padding:2rem;
+}
+.box__title{
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color:#fff;
+}
+.box__content span{
+    color: #fff;
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+/* rental moreee information  */
+.rental__info1{
+    display: flex;
+    align-items: center;
+    background: #9656b0d1;
+    flex-wrap: wrap;
+    padding: 5rem;
+    margin-bottom: 10rem;
+    border-radius: 10rem;
+}
+.rental__info2{
+    display: flex;
+    align-items: center;
+    background: #9656b0b5;
+    flex-wrap: wrap;
+    padding: 5rem;
+    margin-bottom: 10rem;
+    border-radius: 10rem;
+}
+.rental__info3{
+    display: flex;
+    align-items: center;
+    background: #9656b051;
+    flex-wrap: wrap;
+    padding: 5rem;
+    border-radius: 10rem;
+}
+
+.rental__images{
+    flex:1 1 45rem;
+}
+
+.rental__images img{
+    width: 60%;
+}
+.rental__content{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+
+.rental__content h3{
+    font-size: 3rem;
+    color:#fff;
+}
+
+.rental__content p{
+    font-size: 1.6rem;
+    color:#ccc;
+    padding:1rem 0;
+    line-height: 1.8;
+}
+
+/* кнопка для подробной информации(анимациямен розовый) */
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+
+    font-size: 1.3rem;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #f153b5;
+    position: absolute;
+    top: 1.4rem;
+}
+button a {
+    text-decoration: none;
+}
+#btn {
+    position: relative;
+    background-color: transparent;
+    border: 3px solid lightslategray;
+    transition: 0.4s ease-out;
+}
+#btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    width: calc(100% + 2rem);
+    height: calc(100% + 2rem);
+    border-radius: 20px;
+    border: 3px solid lightslategray;
+    opacity: 0;
+    transition: 0.4s ease-out;
+}
+#btn:hover{
+    color: #f153b5;
+    border-color: transparent;
+}
+#btn:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    border-color: #f153b5;
+}
+
+
+
+
+
+
+
+/* для меню(мобайлга керек болады) */
+.menu_btn {
+    display: none;
+    cursor: pointer;
+}
+.menu_btn div{
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3 ease;
+}
+
+
+
+@media screen and (max-width: 991px) {
+    html {
+        font-size: 60%;
+    }
+    header {
+        padding: 2rem;
+    }
+    section{
+        padding: 8rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .menu_btn {
+        display: block;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .navbar {
+        position: absolute;
+        right: 0;
+        top: 9.3vh;
+        background: #f153b4ae;
+        box-shadow: 0 .5rem 1.5rem #f153b4bd;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40% ;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .navbar li {
+        opacity: 0;
+        font-size: 4rem;
+        
+    }
+   .navbar li a {
+        font-weight: bold;
+        font-size: 2rem;
+   }
+
+}
+.nav-active {
+    transform: translateX(0%);
+
+}
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+  
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
+.toggle .first_line {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .second_line {
+    opacity: 0;
+}
+.toggle .third_line {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
