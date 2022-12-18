@@ -18,6 +18,6 @@
         $stsm->close();
         $conn->close();
         // echo("succesfully");
-        header("Location: http://localhost/Project/HomePage.html");
+        header("Location: http://localhost/project/HomePage.html");
     }
 ?>

@@ -1,5 +1,5 @@
-<?php 
-    require_once('config/connect2.php');
+<?php  
+    require_once('connect2.php');
     function displayData(){  
         global $conn;
 
@@ -7,4 +7,4 @@
         $result = $conn->query($query);
         return $result; 
     }
-?>
+?> 

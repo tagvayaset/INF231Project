@@ -17,6 +17,6 @@
         $result = $conn->query($query);
         return $result;
 
-        if()
+        
     }
 ?>
