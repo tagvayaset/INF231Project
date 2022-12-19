@@ -1,76 +1,50 @@
-.grp{
-    color: #000;
-    font-size: 2rem;
-    width: 500px;
-    height: 500px;
-    overflow-y:auto;
-    scroll-snap-type: y mandatory;
-    display: inline-block;
-    margin-left: 19px;
-    margin-right: 49px;
-    justify-content: space-between;
-
+body{
+    background-color: #282838;
+}
+.container {
+    position: relative;
+    width: 25%;
+    height: auto;
+    display: inline-flex;
 }
 
-.itm{
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 100%;
     width: 100%;
+    opacity: 0;
+    transition: 0.9s ease;
+    background-color: #0000007c;
+}
+
+.container:hover .overlay {
+    opacity: 20;    
+}
+.matin{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+    font-style: oblique;
+    color: #fff;
     text-align: center;
-    scroll-snap-align: start;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: medium;
-    color: #3e488cf1;
-
 }
-.itm a{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-}
-.itm p{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
+.matin2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+    font-style: oblique;
+    color: #fff;
+    margin-top: 250px;
+    text-align: end;
 }
 
-.itm:nth-child(1){
-    background-color: aliceblue;
-}
-
-.itm:nth-child(2){
-    background-color: aliceblue;
-}
-
-.itm:nth-child(3){
-    background-color: aliceblue;
-}
-.itm:nth-child(4){
-    background-color: aliceblue;
-}
-@media only screen and (max-width: 400px) {
-    body {
-      background-color: lightblue;
-    }
-    .grp{
-        width: 340px;
-        margin: 50px 8px 6px 30px;
-    }
-  }
-  @media only screen and (min-width: 400px) {
-    body {
-      background-color: rgb(144, 98, 223);
-    }
-    .grp{
-        width: 340px;
-        margin: 190px 90px 50px 65px;     
-   
-    }
-  }
-  @media only screen and (min-width: 700px) {
-    body {
-      background-color: rgb(255, 255, 255);
-    }
-    .grp{
-        width: 350px;
-    
-      
-    }
-  }
