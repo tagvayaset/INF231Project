@@ -1,0 +1,101 @@
+.form_class{
+	
+	display: grid;
+	place-items: center;
+	align-items: center;
+	background-color: rgb(214, 210, 210);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 300px;
+	border: 2px solid #ccc;
+	padding: 20px;
+	border-radius: 15px;
+}
+input{
+	margin: 10px;
+	height: 35px;
+	width: 250px;
+	border-radius: 10px;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 22px;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+}
+.error {
+   background: #F2DEDE;
+   color: #A94442;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+.log h1{
+	text-align:center;
+	border-bottom: 1px solid silver;
+}
+.log form{
+	padding: 0 40px;
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: montserrat;
+	overflow: hidden;
+	color: #2d2d2d;
+}
+
+table {
+	font-size: 18px;
+	font-family: Verdana, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  th, td {
+	font-size: 18px;
+	text-align: left;
+	padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  th {
+	background-color: #4CAF50;
+	color: white;
+  }
+
+  .danger-button {
+	background-color: #d84e36;
+	color: #ffffff; 
+	border-radius: 25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+	cursor: pointer; 
+	padding: 10px 20px;
+	font-size: 18px; 
+  }
+  .success-button {
+	background-color: #5fc963;
+	color: #ffffff; 
+	border-radius: 25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+	cursor: pointer; 
+	padding: 10px 20px;
+	font-size: 18px;
+  }
+  a{
+	text-decoration: none;
+	color: white;
+  }
+  h2{
+	font-size: 18px;
+	font-family: Verdana, sans-serif;
+  }
+  .textArea{
+	height: 150px;
+	width: 275px;
+  }

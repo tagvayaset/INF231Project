@@ -5,7 +5,7 @@ header{
     width: 100%;
     background-size: cover;
     background-position: center;
-    position: relative;
+    position: relataive;
 }
 nav{
     display: flex;
@@ -15,7 +15,7 @@ nav{
     padding-left: 5%;
     padding-right: 5%;
 }
-.logo a{
+.logotype a{
     text-decoration: none;
     color: white;
     font-size: 28px;
@@ -75,6 +75,63 @@ nav ul li a:hover{
 
     position: relative;
     margin-right: 25%;
+}
+.threeImg{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ImgForHomePage{   
+    float: left;
+    width:  350px;
+    height: 300px;
+    object-fit: cover;
+    transition: box-shadow .3s;
+    border-radius:15px;
+}
+.ImgForHomePage :hover{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);  
+}
+#IntroForTourism{  /* its for section intro to tourism*/  
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s ;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.logo:nth-child(1){
+    transition-delay: 200ms;
+}
+.logo:nth-child(2){
+    transition-delay: 400ms;
+}
+.logo:nth-child(3){
+    transition-delay: 600ms;
+}
+.textIntro{
+    font-family: "Helvetica Neue",Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.75em;
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fff;
+
+    position: relative;
+    margin: auto;
+
 }
 /*here everyThing from About Us Page*/
 .desk {
@@ -140,7 +197,7 @@ section{
 }
 .desk2 {
     margin-left: 50%;
-    margin-top: 15%;
+    /* margin-top: 15%; */
 }
 .desk2 h1{
     font-size: 50px;
@@ -150,4 +207,194 @@ section{
 .desk2 p {
     color: #fff;
     line-height: 22px;
+}
+a.btn {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.36em;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 555px;
+    padding: 14px 24px;
+    letter-spacing: .05em;
+}
+a.btn:hover{
+    background-color: #f153b5;
+    transition: .5s;
+    opacity: 0.7;
+}
+#mapSect{
+    height: 60vh;
+    width: 100%;
+}
+#fill{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: .7;
+}
+footer{
+    height: 25vh;
+    min-height: 100px;
+    padding: 20px 50px;
+    width: 100%;
+    background-color: #f153b5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding-right: 15%;
+    
+}
+footer .social_icons{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer .social_icons li{
+    list-style: none;
+}
+footer .social_icons li a{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social_icons li a:hover{
+    transform: translateY(-10px);
+}
+footer .numbers{
+    position: relative;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+footer .numbers li{
+    list-style: none;
+}
+footer .numbers li a{
+    font-size: 1em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+}
+form{
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+.textField{
+    margin: 10px 0;
+}
+.pod{
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+/* waves*/
+
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(img/wavePink-removebg-preview.png);
+    background-size: 1000px 100px;
+}
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_2 4s linear infinite;
+}
+
+footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_2 3s linear infinite;
+}
+@keyframes animateWave {
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_2 {
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    footer{
+        /* flex-direction: column ; */
+        background-color: #282838;
+        
+    }
+    .wave{
+        /* background-color:  */
+    }
+    .waves{
+        display: none;
+    }
+    /* header{
+        margin-right: 0;
+        font-size: 1em;
+        max-width: 100%;
+        padding: 100px;
+    } */
+    .blob{
+        display: none;
+    }
+    section{
+        max-width: 100%;
+    }
+    .textCenter{
+        margin: 0;
+        font-size: 3em;
+    }
+}
+@media screen and (max-width: 991px) {
+    .ImgForHomePage{
+        width:  250px;
+        height: 200px;
+    }
+    .textCenter{
+        margin: 0;
+        font-size: 5em;
+        max-width: 100%;
+        /* margin-left: 80%; */
+    }
+    .textIntro{
+        font-size: 4.5em;
+    }
 }

@@ -5,18 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MainPage</title>
+    <link rel="shortcut icon" href="img/logotype.png" type="image/x-icon">
     <link rel = "stylesheet" href = "style.css">
+    <script defer src="index.js"></script>
 </head>
 <body>
     <header>
         <nav>
-            <h2 class="logo"><a href="HomePage.html">Site<span> Name</span></a></h2>
+            <h2 class="logotype"><a href="HomePage.html">Site<span> Name</span></a></h2>
             <ul>
-                <li><a href="#">Tourism</a></li>
-                <li><a href="#">Entertainment</a></li>
-                <li><a href="#">Rental</a></li>
-                <li><a href="#">Premieres</a></li>
-                <li><a href="#">On weekends</a></li>
+                <li><a href="tourism.html">Tourism</a></li>
+                <!-- <li><a href="#">Entertainment</a></li> -->
+                <li><a href="rental.html">Rental</a></li>
+                <li><a href="premiere.html">Premieres</a></li>
+                <!-- <li><a href="#">On weekends</a></li> -->
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="aboutUs.html">About us</a></li>
             </ul>
         </nav>
@@ -26,7 +29,7 @@
         
         <div class="blob">
             <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
-                <g transform="translate(152.44525146484375, -0.8672599792480469)">
+                <g transform="translate(149.68917846679688, -2.7416000366210938)">
                   <defs>
                     <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
                       <stop offset="0%" style="stop-color: rgb(238, 205, 163);"></stop>
@@ -81,7 +84,99 @@
             <br>
             in digital Almaty
         </h1>
-    </section>    
+    </section>
     
+    <section id="IntroForTourism">
+
+        <h1 class="textIntro hidden">Tourism in ALmaty</h1>
+        <div class="threeImg">
+            <img class="ImgForHomePage logo hidden" src="HomeImg\tourism1.webp">
+            <img class="ImgForHomePage logo hidden" src="HomeImg\tourism2.webp">
+            <img class="ImgForHomePage logo hidden" src="HomeImg\tourism3.webp">
+        </div>
+        
+        <a href="tourism.html" class="btn hidden">View more</a>
+    
+    </section>
+
+    <section id="IntroForTourism">
+
+        <h1 class="textIntro hidden">Entertainment in ALmaty</h1>
+
+        <div class="threeImg">
+            <img class="ImgForHomePage logo hidden" src="HomeImg\ent1.jpg">
+            <img class="ImgForHomePage logo hidden" src="HomeImg\ent2.jpg">
+            <img class="ImgForHomePage logo hidden" src="HomeImg\ent3.jpg">
+        </div>
+        
+        <a href="entertainment.html" class="btn hidden">View more</a>
+    
+    </section>
+
+    <section id="IntroForTourism">
+
+        <h1 class="textIntro hidden">Rent in ALmaty</h1>
+
+        <div class="threeImg">
+            <img class="ImgForHomePage logo hidden" src="HomeImg\rent1.jpg">
+            <img class="ImgForHomePage logo hidden" src="HomeImg\rent2.jpg">
+            <img class="ImgForHomePage logo hidden" src="HomeImg\rent3.jpg">
+        </div>
+        
+        <a href="entertainment.html" class="btn hidden">View more</a>
+    
+    </section>
+    
+
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="numbers">
+            <li><a href="#">+7 705 340 2130 Asset</a></li>
+            <li><a href="#">+7 705 999 1122 Zhibek</a></li>
+            <li><a href="#">+7 705 777 8822 Ayaulym</a></li>
+            <li><a href="#">Email us sxodi@mail.com</a></li>
+            <li><a href="#">Kazakhstan, Almaty, Kaskelen</a></li>
+        </ul>
+        <div class="pod">
+            <ul class="social_icons">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-vk"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            </ul>
+            <p>@Online Gid | All Rights Reserved <br>
+                <a href="aboutUs.html" style="text-decoration: none; color: white;">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMore about us</a></p>
+       
+        </div>
+        <div class="log">
+            <form action="backend/send.php" method="post">
+                <div class="textField">
+                    <input type="text"  placeholder="name" id="name" name="name" >
+                   
+                </div>
+                <div class="textField">				
+                    <input type="number"  placeholder="phone" id="phone" name="phone"  >
+                </div>
+                <div class="textField">				
+                    <input type="email" placeholder="email@gmail.com" name="email">
+                   
+                </div>
+                <div>
+                    <input type="text" placeholder="type your message here" name = "text">
+                </div>
+
+                <input type="submit" name="submit"  value="send">    
+    
+            </form>
+        </div>     
+    </footer>
+      
+
 </body>
 </html>
