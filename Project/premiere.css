@@ -82,7 +82,7 @@ nav ul li a:hover{
   margin-top: 200px;
 }
 
-img {
+img{
   display: none;
 }
 
@@ -111,12 +111,13 @@ img {
   background-color: #282838; /*  background */
   border: 1px solid #f153b45d; /* border */
   border-radius: 19px;   /*  border-radius */
-  color: #f153b5; /* White text */
   padding: 10px 24px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   float: left; /* Float the buttons side by side */;
 }
-
+.btn-group a{
+  color: #f153b5;
+}
 /* Clear floats (clearfix hack) */
 .btn-group:after {
   content: "";
@@ -198,8 +199,37 @@ img {
   
 }
 
+/* theatre */
 
+.box{
+  display: flex;
+  padding: 0px;
+  width: 700px;
+  height: 700px;
+  margin: 0;
+  margin-left: 30%;
+  margin-bottom: 5%;
+  align-items: center;
+  text-align: center;
+  border: #222234 2px solid;
+  border-radius: 5%;
+  background-color: #202030;
+  box-shadow: rgba(255, 255, 255, 0.017) 2px 5px 10px ;
+  
+}
+.box p{
+  margin-left: 25px;
+  color: #ffffff;
+}
 
+.timage{
+  width: 250px;
+  height: 350px;
+  display:inline-block;
+  margin-left: 5%;
+}
+
+/* concerts's content */
 
 
 
