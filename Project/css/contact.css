@@ -253,7 +253,6 @@ header{
     display: flex;
     align-items: center;
     background: #9656b0d1;
-    flex-wrap: wrap;
     padding: 5rem;
     margin-bottom: 10rem;
     border-radius: 10rem;
@@ -262,7 +261,6 @@ header{
     display: flex;
     align-items: center;
     background: #9656b0b5;
-    flex-wrap: wrap;
     padding: 5rem;
     margin-bottom: 10rem;
     border-radius: 10rem;
@@ -271,34 +269,112 @@ header{
     display: flex;
     align-items: center;
     background: #9656b051;
-    flex-wrap: wrap;
     padding: 5rem;
     border-radius: 10rem;
 }
 
-.rental__images{
-    flex:1 1 45rem;
-}
-
-.rental__images img{
-    width: 60%;
-}
 .rental__content{
     flex:1 1 45rem;
-    padding:2rem;
+    padding:4rem;
+}
+.rental__content a {
+    text-decoration: none;
+    color:#ccc;
+    font-size: 1.6rem;
 }
 
 .rental__content h3{
     font-size: 3rem;
     color:#fff;
+    justify-content: center;
 }
-
 .rental__content p{
     font-size: 1.6rem;
     color:#ccc;
     padding:1rem 0;
-    line-height: 1.8;
+    line-height: 2;
 }
+
+/* slider */
+.slider{
+    width: 30rem;
+    height: 35rem;
+    border-radius: 10%;
+    overflow: hidden;
+}
+.slides{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 100%;
+    transition: 2s; 
+}
+.slide img{
+    width: 40rem;
+}
+/* ауыстырып отыру ушин */
+.navigation-manual{
+    position: absolute;
+    margin-top: 20rem;
+    margin-left: 8.5rem;
+    display: flex;
+}
+.manual-btn{
+    border: 2px solid #f30698;
+    padding: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 2rem;
+}
+.manual-btn:hover{
+    background-color: #f30698;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -100%;
+}
+#radio3:checked ~ .first{
+    margin-left: -200%;
+}
+#radio4:checked ~ .first{
+    margin-left: -300%;
+}
+#ratio1:checked ~ .first{
+    margin-left: 0;
+}
+#ratio2:checked ~ .first{
+    margin-left: -100%;
+}
+#ratio3:checked ~ .first{
+    margin-left: -200%;
+}
+#ratio4:checked ~ .first{
+    margin-left: -300%;
+}
+#rabio1:checked ~ .first{
+    margin-left: 0;
+}
+#rabio2:checked ~ .first{
+    margin-left: -100%;
+}
+#rabio3:checked ~ .first{
+    margin-left: -200%;
+}
+#rabio4:checked ~ .first{
+    margin-left: -300%;
+}
+
 
 /* кнопка для подробной информации(анимациямен розовый) */
 button {
@@ -380,6 +456,7 @@ button a {
     section{
         padding: 8rem;
     }
+
 }
 @media screen and (max-width: 768px) {
     .menu_btn {
@@ -410,6 +487,7 @@ button a {
         font-weight: bold;
         font-size: 2rem;
    }
+
 
 }
 .nav-active {
