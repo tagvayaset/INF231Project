@@ -245,7 +245,7 @@ footer{
     align-items: center;
     position: relative;
     padding-right: 15%;
-    /* flex-direction: column ; */
+    
 }
 footer .social_icons{
     position: relative;
@@ -354,3 +354,47 @@ footer .wave#wave4{
     }
 }
 
+@media screen and (max-width: 768px){
+    footer{
+        /* flex-direction: column ; */
+        background-color: #282838;
+        
+    }
+    .wave{
+        /* background-color:  */
+    }
+    .waves{
+        display: none;
+    }
+    /* header{
+        margin-right: 0;
+        font-size: 1em;
+        max-width: 100%;
+        padding: 100px;
+    } */
+    .blob{
+        display: none;
+    }
+    section{
+        max-width: 100%;
+    }
+    .textCenter{
+        margin: 0;
+        font-size: 3em;
+    }
+}
+@media screen and (max-width: 991px) {
+    .ImgForHomePage{
+        width:  250px;
+        height: 200px;
+    }
+    .textCenter{
+        margin: 0;
+        font-size: 5em;
+        max-width: 100%;
+        /* margin-left: 80%; */
+    }
+    .textIntro{
+        font-size: 4.5em;
+    }
+}

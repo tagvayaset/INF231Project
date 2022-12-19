@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2 class="logotype"><a href="HomePage.html">Site<span> Name</span></a></h2>
+            <ul>
+                <li><a href="tourism.html">Tourism</a></li>
+                <!-- <li><a href="#">Entertainment</a></li> -->
+                <li><a href="rental.html">Rental</a></li>
+                <li><a href="premiere.html">Premieres</a></li>
+                <!-- <li><a href="#">On weekends</a></li> -->
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact" id="contact">
+        <h1 class="heading"> <span>CONTACT</span> US </h1>
+    
+        <div class="icons-container">
+            <div class="icons">
+                <i class="fas fa-phone"></i>
+                <h3>our number</h3>
+                <p>+705-461-41-01</p>
+                <p>+777-777-77-77</p>
+            </div>
+            <div class="icons">
+                <i class="fas fa-envelope"></i>
+                <h3>our email</h3>
+                <p>210103107@gmail.com</p>
+                <p>210103105@gmail.com</p>
+            </div>
+            <div class="icons">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>our location</h3>
+                <p>Suleyman Demirel University</p>
+            </div>
+        </div>
+
+        <div class="contact__inner">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.0831306928803!2d76.6668655149048!3d43.20774568913956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38834f7675d8a6c3%3A0x7b7d14aec270c056!2sSDU%20(Suleyman%20Demirel%20University)!5e0!3m2!1sen!2skz!4v1670347949995!5m2!1sen!2skz" allowfullscreen="" loading="lazy"></iframe>
+            
+            <form action="backend/send.php" method="post">
+                <h3>GET IN TOUCH</h3>
+                <div class="inputBox">
+                    <span class="fas fa-user" ></span>
+                    <input type="text" placeholder="name" name="name">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="text" placeholder="phone" name="phone">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-envelope" ></span>
+                    <input type="email" placeholder="email" name="email">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-text"></span>
+                    <input type="text" placeholder="leave feedback | problem | advises" name="text">
+                </div>
+
+                <input type="submit" value="contact now" class="btn">
+            </form>
+
+        </div>
+    </section>
+
+    <script src="script/index.js"></script>
+</body>
+</html>
+
