@@ -315,6 +315,7 @@ nav ul li a:hover{
     body{
         background-color: #282838;
     }
+
     nav ul li{
         display: flex;
     }

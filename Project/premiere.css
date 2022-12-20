@@ -1,57 +1,89 @@
 body{
-    background-color: #282838;
-    
+  background-color: #282838;
 }
-/*header*/
-header{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+*{
+  margin:0; padding:0;
+  box-sizing: border-box;
+  color:#fff;
+  font-family: 'Josefin Sans', sans-serif;
+  transition: all .3s ease-out;
 }
-.navn{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-bottom: 60px;
+html{
+  font-size:85%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
 }
-.logo a{
-    text-decoration: none;
-    color: white;
-    font-size: 28px;
+/* scrollbar */
+html::-webkit-scrollbar{
+  width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: #fff;
+  border-radius: 5rem;
+}
+section {
+  padding: 8rem 7%;
+}
+.heading{
+  text-align: center;
+  padding-bottom: 3rem;
+  padding-top: 10rem;
+  font-size: 4rem;
 }
 span{
   color: #f153b5;
 }
-nav ul li{
-  list-style-type: none;
-  display: inline-block;
-  padding: 5px 10px;
+/* header */
+header{
+  padding:1.5rem 7%;
+  position: fixed;
+  top:0; left: 0; right: 0;
+  z-index: 1000;
+  background-color: #262635;
+  border-bottom:.1rem solid rgba(255,255,255,.3);
 }
-nav ul li a{
-  color: white;
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logotype a{
   text-decoration: none;
-  font-weight: bold;
+  color: white;
+  font-size: 3rem;
+  letter-spacing: .4rem;
 }
-nav ul li a:hover{
+.navbar li {
+  display: inline-block;
+  padding: 1rem 1rem;
+  
+}
+.navbar li a{
+  text-decoration: none;
+  margin:0rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color:#fff;
+
+}
+.navbar li a:hover{
   color: #f153b5;
   transition: .3s;
 }
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Josefin Sans', sans-serif;
-}
 
-/* blocktext
+/* blocktext */
 .blocktext{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 14%;
 }
 .block {    
     display: inline-block;
@@ -73,7 +105,7 @@ nav ul li a:hover{
     font-size: 60px;
     width: 69%;
     color: #fff;
-} */
+}
 
 
 
@@ -244,29 +276,114 @@ nav ul li a:hover{
 
 
   /* media */
-  @media only screen and (min-width: 300px) {
-  body{
-    background-color: rgb(167, 35, 35);
-  }
-  nav ul li{
-    display: flex;
+
+
+/* для меню(мобайлга керек болады) */
+.menu_btn {
+  display: none;
+  cursor: pointer;
 }
-  .block1{
-    width: 90%;
+.menu_btn div{
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  transition: all 0.3 ease;
+}
+
+
+
+@media screen and (max-width: 991px) {
+  html {
+      font-size: 60%;
+  }
+  header {
+      padding: 2rem;
+  }
+  section{
+      padding: 8rem;
   }
 
 }
-
-@media only screen and (min-width: 700px){
-    body{
-      background-color: rgb(226, 223, 50);
-    }
-    nav ul li{
+@media screen and (max-width: 768px) {
+  .menu_btn {
+      display: block;
+  }
+  body {
+      overflow-x: hidden;
+  }
+  .navbar {
+      position: absolute;
+      right: 0;
+      top: 9.3vh;
+      background: #f153b4ae;
+      box-shadow: 0 .5rem 1.5rem #f153b4bd;
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 40% ;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+  }
+  .navbar li {
+      opacity: 0;
+      font-size: 4rem;
+      
+  }
+ .navbar li a {
+      font-weight: bold;
+      font-size: 2rem;
+ }
+
+
+}
+.nav-active {
+  transform: translateX(0%);
+
+}
+@keyframes navLinkFade {
+  from{
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0px);
   }
 }
-@media only screen and (min-width: 1000px){
-    body{
-      background-color: rgb(90, 221, 63);
-    }
+
+@media screen and (max-width: 450px) {
+  html {
+      font-size: 55%;
+  }
+  .rental__info1{
+      flex-direction: column;  
+  }
+  .rental__info2{
+      flex-direction: column;  
+  }
+  .rental__info3{
+      flex-direction: column;  
+  }
+}
+.toggle .first_line {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .second_line {
+  opacity: 0;
+}
+.toggle .third_line {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.block p{
+  font-family: 'Monospace', sans-serif;
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+.block1{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  width: 40%;
+  color: #fff;
 }
