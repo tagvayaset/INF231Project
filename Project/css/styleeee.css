@@ -1,0 +1,268 @@
+body{
+    background-color: #282838;
+}
+span{
+    color: #f153b5;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    color:#fff;
+    transition: all .3s ease-out;
+}
+html{
+    font-size:85%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+/* scrollbar */
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+/* header */
+header{
+    padding:1.5rem 7%;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    background-color: #262635;
+    border-bottom:.1rem solid rgba(255,255,255,.3);
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logotype a{
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    letter-spacing: .4rem;
+}
+.navbar li {
+    display: inline-block;
+    padding: 1rem 1rem;
+    
+}
+.navbar li a{
+    text-decoration: none;
+    margin:0rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:#fff;
+
+}
+.navbar li a:hover{
+    color: #f153b5;
+    transition: .3s;
+}
+
+/*Капля*/
+.secBlob
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+}
+
+.blob{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+}
+.blob:nth-child(2){
+    filter: blur(50px);
+}
+/*текст который в цетре*/
+.textCenter{
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.75em;
+    line-height: 1.5em;
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fff;
+
+    position: relative;
+    margin-right: 25%;
+}
+/*here everyThing from About Us Page*/
+.desk {
+    margin-left: 8%;
+    margin-top: 15%;
+}
+.desk h1{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.desk p {
+    color: #fff;
+    line-height: 22px;
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.images:hover .shape{
+    bottom: 40px;
+}
+.images:hover .person{
+    left: 45%;
+}
+section{
+    position: relative;
+    display: flex;
+    align-items:center;
+    min-height: 100vh;
+}
+.images2{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+}
+.images2 img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.images:hover .shape2{
+    bottom: 40px;
+}
+.images:hover .person2{
+    left: 45%;
+}
+.desk2 {
+    margin-left: 50%;
+    margin-top: 15%;
+}
+.desk2 h1{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.desk2 p {
+    color: #fff;
+    line-height: 22px;
+}
+
+/* ... */
+.menu_btn {
+    display: none;
+    cursor: pointer;
+}
+.menu_btn div{
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3 ease;
+}
+
+
+
+
+
+@media screen and (max-width: 991px) {
+    html {
+        font-size: 60%;
+    }
+    header {
+        padding: 2rem;
+    }
+    section{
+        padding: 8rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .menu_btn {
+        display: block;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .navbar {
+        position: absolute;
+        right: 0;
+        top: 9.3vh;
+        background: #f153b4ae;
+        box-shadow: 0 .5rem 1.5rem #f153b4bd;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40% ;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .navbar li {
+        opacity: 0;
+        font-size: 4rem;
+        
+    }
+   .navbar li a {
+        font-weight: bold;
+        font-size: 2rem;
+   }
+
+}
+.nav-active {
+    transform: translateX(0%);
+
+}
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+  
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
+.toggle .first_line {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .second_line {
+    opacity: 0;
+}
+.toggle .third_line {
+    transform: rotate(45deg) translate(-5px, -6px);
+}

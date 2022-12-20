@@ -78,8 +78,6 @@ header{
     transition: .3s;
 }
 
-
-
 /* информация биз туралы */
 .icons-container{
     display:grid;
@@ -508,6 +506,15 @@ button a {
 @media screen and (max-width: 450px) {
     html {
         font-size: 55%;
+    }
+    .rental__info1{
+        flex-direction: column;  
+    }
+    .rental__info2{
+        flex-direction: column;  
+    }
+    .rental__info3{
+        flex-direction: column;  
     }
 }
 .toggle .first_line {
