@@ -47,7 +47,7 @@ nav ul li a:hover{
   font-family: 'Josefin Sans', sans-serif;
 }
 
-/*blocktext*/
+/* blocktext
 .blocktext{
     display: flex;
     justify-content: space-between;
@@ -73,7 +73,7 @@ nav ul li a:hover{
     font-size: 60px;
     width: 69%;
     color: #fff;
-}
+} */
 
 
 
@@ -238,12 +238,35 @@ nav ul li a:hover{
 
 
 
-@media screen and(max-width: 400px){
+
+
+
+
+
+  /* media */
+  @media only screen and (min-width: 300px) {
   body{
     background-color: rgb(167, 35, 35);
   }
+  nav ul li{
+    display: flex;
+}
   .block1{
     width: 90%;
   }
 
+}
+
+@media only screen and (min-width: 700px){
+    body{
+      background-color: rgb(226, 223, 50);
+    }
+    nav ul li{
+      display: flex;
+  }
+}
+@media only screen and (min-width: 1000px){
+    body{
+      background-color: rgb(90, 221, 63);
+    }
 }
