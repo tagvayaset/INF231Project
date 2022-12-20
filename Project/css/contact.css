@@ -1,4 +1,6 @@
-
+body{
+    background-color: #282838;
+}
 *{
     margin:0; padding:0;
     box-sizing: border-box;
@@ -38,51 +40,44 @@ span{
     color: #f153b5;
 }
 /* header */
-body{
-    background-color: #282838;
-}
 header{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    position: relataive;
+    padding:1.5rem 7%;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    background-color: #262635;
+    border-bottom:.1rem solid rgba(255,255,255,.3);
 }
-nav{
+.nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
 }
+
 .logotype a{
     text-decoration: none;
     color: white;
-    font-size: 28px;
+    font-size: 3rem;
+    letter-spacing: .4rem;
 }
-span{
-    color: #f153b5;
-}
-nav ul li{
-    list-style-type: none;
+.navbar li {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 1rem 1rem;
+    
 }
-nav ul li a{
-    color: white;
+.navbar li a{
     text-decoration: none;
+    margin:0rem;
+    font-size: 1.2rem;
     font-weight: bold;
+    color:#fff;
+
 }
-nav ul li a:hover{
+.navbar li a:hover{
     color: #f153b5;
     transition: .3s;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
-}
+
 
 
 /* информация биз туралы */
@@ -258,7 +253,6 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     background: #9656b0d1;
-    flex-wrap: wrap;
     padding: 5rem;
     margin-bottom: 10rem;
     border-radius: 10rem;
@@ -267,7 +261,6 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     background: #9656b0b5;
-    flex-wrap: wrap;
     padding: 5rem;
     margin-bottom: 10rem;
     border-radius: 10rem;
@@ -276,34 +269,112 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     background: #9656b051;
-    flex-wrap: wrap;
     padding: 5rem;
     border-radius: 10rem;
 }
 
-.rental__images{
-    flex:1 1 45rem;
-}
-
-.rental__images img{
-    width: 60%;
-}
 .rental__content{
     flex:1 1 45rem;
-    padding:2rem;
+    padding:4rem;
+}
+.rental__content a {
+    text-decoration: none;
+    color:#ccc;
+    font-size: 1.6rem;
 }
 
 .rental__content h3{
     font-size: 3rem;
     color:#fff;
+    justify-content: center;
 }
-
 .rental__content p{
     font-size: 1.6rem;
     color:#ccc;
     padding:1rem 0;
-    line-height: 1.8;
+    line-height: 2;
 }
+
+/* slider */
+.slider{
+    width: 30rem;
+    height: 35rem;
+    border-radius: 10%;
+    overflow: hidden;
+}
+.slides{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 100%;
+    transition: 2s; 
+}
+.slide img{
+    width: 40rem;
+}
+/* ауыстырып отыру ушин */
+.navigation-manual{
+    position: absolute;
+    margin-top: 20rem;
+    margin-left: 8.5rem;
+    display: flex;
+}
+.manual-btn{
+    border: 2px solid #f30698;
+    padding: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 2rem;
+}
+.manual-btn:hover{
+    background-color: #f30698;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -100%;
+}
+#radio3:checked ~ .first{
+    margin-left: -200%;
+}
+#radio4:checked ~ .first{
+    margin-left: -300%;
+}
+#ratio1:checked ~ .first{
+    margin-left: 0;
+}
+#ratio2:checked ~ .first{
+    margin-left: -100%;
+}
+#ratio3:checked ~ .first{
+    margin-left: -200%;
+}
+#ratio4:checked ~ .first{
+    margin-left: -300%;
+}
+#rabio1:checked ~ .first{
+    margin-left: 0;
+}
+#rabio2:checked ~ .first{
+    margin-left: -100%;
+}
+#rabio3:checked ~ .first{
+    margin-left: -200%;
+}
+#rabio4:checked ~ .first{
+    margin-left: -300%;
+}
+
 
 /* кнопка для подробной информации(анимациямен розовый) */
 button {
@@ -385,6 +456,7 @@ button a {
     section{
         padding: 8rem;
     }
+
 }
 @media screen and (max-width: 768px) {
     .menu_btn {
@@ -415,6 +487,7 @@ button a {
         font-weight: bold;
         font-size: 2rem;
    }
+
 
 }
 .nav-active {
