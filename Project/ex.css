@@ -297,3 +297,103 @@ header{
     font-style: oblique;
     font-size: x-large;
   }
+  @media only screen and (min-width: 700px) {
+    body{
+     background-color: #282838;
+     }
+     nav ul li{
+         display: flex;
+     }
+     .first-page{
+     font-size:larger;
+     }
+     .box2{
+         display: inline;
+     }
+     .text p{
+         font-size: 20px;
+         margin-bottom: 10px;
+     }
+     .alm{
+         font-size: xx-large;
+         margin-top: 30px;
+         margin-left: 48%;
+     }
+     .tour {
+         text-align: center;
+         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+           "Lucida Sans", Arial, sans-serif;
+         color: #ff1bbe;
+         font-size: 42px;
+         margin-top: 139px;
+         margin-bottom: -101px;
+       }
+       .matin {
+         color: rgb(255, 255, 255);
+         font-size: 12px;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         -webkit-transform: translate(-50%, -50%);
+         -ms-transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%);
+         text-align: center;
+       }
+       .container:hover .overlay {
+         opacity: 100%;
+       }
+    
+ }
+ 
+ @media only screen and (min-width: 1000px) {
+     body {
+         background-color: #282838;
+      margin: 0;
+     }
+     nav ul li{
+         display: inline-block;
+     }
+     .first-page{
+     font-size:larger;
+     }
+     .box2{
+         display: inline;
+     }
+     .text p{
+         font-size: 20px;
+         margin-bottom: 10px;
+     }
+     .alm{
+         font-size: xx-large;
+         margin-top: 30px;
+         margin-left: 48%;
+     }
+     div.item{
+         width: 669px;
+         height: 200px;
+     }
+     .tour {
+         text-align: center;
+         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+           "Lucida Sans", Arial, sans-serif;
+         color: #ff1bbe;
+         font-size: 42px;
+         margin-top: 139px;
+         margin-bottom: -101px;
+       }
+       .matin {
+         color: rgb(255, 255, 255);
+         font-size: 12px;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         -webkit-transform: translate(-50%, -50%);
+         -ms-transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%);
+         text-align: center;
+       }
+       .container:hover .overlay {
+         opacity: 100%;
+       }
+       
+ }
